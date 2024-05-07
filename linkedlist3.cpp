@@ -21,6 +21,8 @@ void returnVideo(int id);
 void displayVideos();
 void showMenu();
 void calculateTotalSales();
+
+
 int main() {
     int choice, id;
     string title;
@@ -31,12 +33,11 @@ int main() {
         cin >> choice;
         switch (choice) {
             case 1:
-                cout << "Enter title";
+                cout << "Enter title: ";
                 cin.ignore();
                 getline(cin, title);
                 cout << "Enter ID of the video: ";
                 cin >> id;
-                
                 cout << "Enter price of the video: ";
                 cin >> price;
                 addVideo(title, id, price);
@@ -92,6 +93,7 @@ void addVideo(string title, int id, double price) {
     }
     cout << "Video added successfully!\n";
 }
+
 void rentVideo(int id) {
     Video* current = head;
     while (current != nullptr) {
@@ -126,3 +128,36 @@ void displayVideos() {
         current = current->next;
     }
 }
+
+//file management
+//storing/retrieve data
+//other functions
+//member or non-member (price)
+//user input borrow (videos) CRUD 
+//Types (genre) / classifications
+//earnings (videos)
+//birthday (free) / Holidays (50%off) (10% special Promo)
+//video (VHS / DVD / CD)
+//Inventory 
+//Penalty -> Duration of rent (1day/2days)
+
+//latest/old
+
+//abc -> 20 for 2days 
+//late penalty - penalty 
+//early -> discount
+
+//damage videos / loss 
+//refund for non working videos
+//pricing / new (higher cost) old lower cost
+//loyalty program (2 years less 10%, 3, less 15% at 10years less 20%)
+//age restriction (video->adult(20 above) registration (age 18) not allowed to borrow the video
+
+
+//search function (title, director, genre)
+//reservation (videos)
+//expire membership (expire renew / expired (not allowed to borrow) 
+// check date of membership
+
+//reviews (movies) rented 
+
