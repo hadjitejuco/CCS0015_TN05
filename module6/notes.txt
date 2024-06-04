@@ -1,1 +1,27 @@
 
+
+Iteration / Recursion
+
+Repetitive task 
+  repeat the set of instructions a specific number of times or until a condition is met.
+  for, while, and do while loops
+
+
+Recursion
+   repeats a set of instructions / it calls itself (function)
+
+Features                 Iteration                        Recursion
+
+Control Flow            loop construct                function -> call itself
+                                  for, while, do-while
+
+State management        loop variable                 call stack 
+
+Termination                loop condition              Base case 
+
+Memory usage          Generally low                 Higher 
+
+Ease of use                 easier to use                easier / learning curve 
+
+
+
